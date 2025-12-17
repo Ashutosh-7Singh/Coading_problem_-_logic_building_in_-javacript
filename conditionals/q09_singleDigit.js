@@ -11,29 +11,19 @@
 // Q9: Check if a number is a single-digit number
 // Implement `solve(n)` to return: true if single-digit (including negative single digits), else false.
 
-const lib = require('../if_else/if_else_examples');
+function isSingleDigit(value) {
 
-function solve(n) {
-  return lib.check9_singleDigit(n);
-}
+  // convert value to string
+  let str = String(value);
 
-function runExample() {
-  const sample = -7;
-  console.log('Q9 - Single-digit - sample:', sample, '=>', solve(sample));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check single-digit number' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      "sample"
-    ],
-    "expected": false
+  // check length is 1 and between 0 to 9
+  if (str.length === 1 && str >= "0" && str <= "9") {
+    return true;
+  } else {
+    return false;
   }
-];
-module.exports.tests = __tests;
+}
+
+
+console.log(isSingleDigit(2))
+console.log(isSingleDigit("w"))

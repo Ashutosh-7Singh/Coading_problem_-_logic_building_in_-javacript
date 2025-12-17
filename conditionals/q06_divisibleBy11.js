@@ -11,29 +11,35 @@
 // Q6: Check if a number is divisible by 11
 // Implement `solve(n)` to return: 'Divisible by 11' or 'Not divisible by 11'.
 
-const lib = require('../if_else/if_else_examples');
-
-function solve(n) {
-  return lib.check6_divisibleBy11(n);
+function divisibleByEleven(number){
+if (typeof number !== 'number') {
+  console.log("Please Provide a Valid Number")
 }
 
-function runExample() {
-  const sample = 33;
-  console.log('Q6 - Divisible by 11 - sample:', sample, '=>', solve(sample));
-}
+let oddSum = 0;
+let evenSum = 0;
+let position = 1; // Start from position 1 (rightmost digit)
 
-if (require.main === module) runExample();
+while (number > 0) {
+  const digit = number % 10; // Get the last digit
 
-module.exports = { solve, runExample, description: 'Check divisible by 11' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      "sample"
-    ],
-    "expected": "Not divisible by 11"
+  if (position % 2 === 1) {
+    oddSum += digit; // Add to odd position sum
+  } else {
+    evenSum += digit; // Add to even position sum
   }
-];
-module.exports.tests = __tests;
+
+  number = Math.floor(number / 10); // Remove the last digit
+  position++; // Move to the next position
+}
+
+const difference = Math.abs(oddSum - evenSum);
+
+if (difference % 11 === 0) {
+  console.log("Divisible by 11");
+} else {
+  console.log("Not Divisible by 11");
+}
+}
+
+divisibleByEleven(2728);

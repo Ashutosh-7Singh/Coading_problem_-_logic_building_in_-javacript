@@ -11,29 +11,16 @@
 // Q10: Check if a number is a two-digit number
 // Implement `solve(n)` to return: true if two-digit (including negative two-digit), else false.
 
-const lib = require('../if_else/if_else_examples');
 
-function solve(n) {
-  return lib.check10_twoDigit(n);
+function isDoubleDigit(digit){
+    const str=String(digit)
+    
+    if(str.length !== 1 && str >=10 &&  str <= 99){
+        console.log("Double Digit")
+    }else{
+        console.log("Not Double Digit");
+        
+    }
 }
 
-function runExample() {
-  const sample = 45;
-  console.log('Q10 - Two-digit - sample:', sample, '=>', solve(sample));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check two-digit number' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      "sample"
-    ],
-    "expected": false
-  }
-];
-module.exports.tests = __tests;
+isDoubleDigit("121")
