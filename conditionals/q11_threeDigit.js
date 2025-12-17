@@ -11,29 +11,14 @@
 // Q11: Check if a number is a three-digit number
 // Implement `solve(n)` to return: true if three-digit (including negative three-digit), else false.
 
-const lib = require('../if_else/if_else_examples');
+function isThreeDigit(digit){
+   const str=String(digit);
 
-function solve(n) {
-  return lib.check11_threeDigit(n);
+   if(str.length ===3 && str >=100 && str <= 999){
+    console.log("Three Digit ")
+   }else{
+    console.log("Not Three Digit")
+   }
 }
 
-function runExample() {
-  const sample = 256;
-  console.log('Q11 - Three-digit - sample:', sample, '=>', solve(sample));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check three-digit number' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      "sample"
-    ],
-    "expected": false
-  }
-];
-module.exports.tests = __tests;
+isThreeDigit("123")

@@ -8,32 +8,18 @@
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */
 
+function checkUpperCaseLowerCase(char){
+  if(typeof char !== 'string'){
+    console.log("Input is not a character")
+  }
+
+  if(char >='A' && char <= 'Z'){
+    console.log("Upper Case")
+  }else {
+    console.log("Lowercase")
+  }
+}
+checkUpperCaseLowerCase("A")
 // Q8: Check if a character is uppercase or lowercase
 // Implement `solve(ch)` to return: 'Uppercase', 'Lowercase', or error message for invalid input.
 
-const lib = require('../if_else/if_else_examples');
-
-function solve(ch) {
-  return lib.check8_upperOrLower(ch);
-}
-
-function runExample() {
-  const sample = 'G';
-  console.log('Q8 - Uppercase or Lowercase - sample:', sample, '=>', solve(sample));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check uppercase or lowercase' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      "sample"
-    ],
-    "expected": "Input must be a single character"
-  }
-];
-module.exports.tests = __tests;
