@@ -13,27 +13,16 @@
 
 const lib = require('../if_else/if_else_examples');
 
-function solve(a, b) {
-  return lib.check16_twoNumbersEqual(a, b);
-}
-
-function runExample() {
-  const a = 10, b = 10;
-  console.log('Q16 - Two numbers equal - sample:', a, b, '=>', solve(a, b));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check if two numbers are equal' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      "a, b"
-    ],
-    "expected": false
+function twoNumbers(a,b){
+  if(typeof a !== 'number' && typeof b !== 'number') {
+    console.log("Input is not a number");
+    return;
   }
-];
-module.exports.tests = __tests;
+
+  if (a===b){
+    return true
+  }else{
+    return false
+  }
+}
+console.log(twoNumbers(2,2))

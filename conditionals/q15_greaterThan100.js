@@ -13,27 +13,10 @@
 
 const lib = require('../if_else/if_else_examples');
 
-function solve(n) {
-  return lib.check15_greaterThan100(n);
-}
-
-function runExample() {
-  const sample = 150;
-  console.log('Q15 - Greater than 100 - sample:', sample, '=>', solve(sample));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check if greater than 100' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      "sample"
-    ],
-    "expected": false
+function greateThan100(num){
+  if (typeof num !== 'number'){
+     console.log("Wrong Input")
   }
-];
-module.exports.tests = __tests;
+  if(num > 100){return true }else return false
+}
+console.log(greateThan100(1000))
