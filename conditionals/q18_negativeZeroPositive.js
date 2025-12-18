@@ -12,28 +12,16 @@
 // Implement `solve(n)` to return: 'Negative', 'Zero', or 'Positive'.
 
 const lib = require('../if_else/if_else_examples');
+function negativeZeroPositive(num){
+  if (typeof num !== 'number') return false
 
-function solve(n) {
-  return lib.check18_negativeZeroPositive(n);
-}
-
-function runExample() {
-  const sample = -1;
-  console.log('Q18 - Negative/Zero/Positive - sample:', sample, '=>', solve(sample));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check negative/zero/positive' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      "sample"
-    ],
-    "expected": "Positive"
+  if(num >0) {
+    console.log("Positive")
+  }else if(num < 0){
+    console.log("Negative")
+  }else{
+    console.log("Zero")
   }
-];
-module.exports.tests = __tests;
+}
+
+negativeZeroPositive(-9)
