@@ -13,27 +13,11 @@
 
 const lib = require('../if_else/if_else_examples');
 
-function solve(n) {
-  return lib.check17_multipleOf10(n);
+function multipleOf10(num){
+  if(typeof num !== 'number') return false
+   if (num % 10 ===0 ){
+    console.log("divisible to 10")
+   }else console.log("Not divisible by 10")
 }
 
-function runExample() {
-  const sample = 120;
-  console.log('Q17 - Multiple of 10 - sample:', sample, '=>', solve(sample));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check multiple of 10' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      "sample"
-    ],
-    "expected": false
-  }
-];
-module.exports.tests = __tests;
+multipleOf10(11)

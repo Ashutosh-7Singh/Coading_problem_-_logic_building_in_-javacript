@@ -11,28 +11,21 @@
 // Q26: Check triangle type: equilateral, isosceles, or scalene
 const lib = require('../if_else/level2_basic_logic');
 
-function solve(a, b, c) {
-  return lib.check26_triangleType(a, b, c);
-}
-
-function runExample() {
-  console.log('Q26 sample (60,60,60):', solve(60,60,60));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Triangle type: equilateral/isosceles/scalene' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      60,
-      60,
-      60
-    ],
-    "expected": "Equilateral"
+function  triangle (a,b,c){
+  if( a>0 && b>0 && c>0 && a+b+c === 180 && a == b !== c ){
+    console.log("Isosceles Triangle")
+  }else if(a>0 && b>0 && c>0 && a+b+c ===180 && a !==b !== c  ){
+    console.log("Scalene Triangle")
+  }else if(a>0 && b>0 && c>0 && a+b+c === 180 && a==b==c){
+    console.log("Equilateral Triangle")
+  }else if (a <90 && b < 90 && c < 90 && a+b+c === 180 ){
+    console.log("Scalene Triangle")
+  }else if (a = 90 && b>0 && c>0 && a+b+c=== 180 ){
+    console.log("Right-Angled Triangle")
+  }else if (a > 120 || b>0  || c>0  && a+b+c === 180 ){
+    console.log("Obtuse Triangle")
+  }else {
+    console.log("Not A Triangle")
   }
-];
-module.exports.tests = __tests;
+}
+triangle(20,20,140)

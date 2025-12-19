@@ -13,27 +13,9 @@
 
 const lib = require('../if_else/if_else_examples');
 
-function solve(n) {
-  return lib.check19_between1and50(n);
+function between1To(num){
+  if (num >=1 && num <= 50){
+    console.log("Between 1 to 50")
+  }else console.log("not")
 }
-
-function runExample() {
-  const sample = 25;
-  console.log('Q19 - Between 1 and 50 - sample:', sample, '=>', solve(sample));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check between 1 and 50' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      "sample"
-    ],
-    "expected": false
-  }
-];
-module.exports.tests = __tests;
+ between1To(129)
