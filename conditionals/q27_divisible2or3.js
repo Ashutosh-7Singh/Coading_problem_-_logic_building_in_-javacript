@@ -9,28 +9,19 @@
  */
 
 // Q27: Check if a number is divisible by 2, 3, or both
-const lib = require('../if_else/level2_basic_logic');
+// const lib = require('../if_else/level2_basic_logic');
 
-function solve(n) {
-  return lib.check27_divisible2or3(n);
+function divisibleBy2And3(num){
+  let sum = 0;
+  let bum=num;
+ let digit=num%10
+ sum  += digit
+ num = num/10 
+ 
+ if(num %  3 === 0 && (bum % 10 === 0 || bum % 10 === 2  || bum % 10 === 4 ||  bum % 10 ===6 || num % 10 ===8 )){
+  console.log("Divisible By 2 & 3")
+ }else {
+  console.log("Not Divisible ")
+ }
 }
-
-function runExample() {
-  console.log('Q27 sample (12):', solve(12));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check divisible by 2, 3, or both' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      12
-    ],
-    "expected": "Divisible by both 2 and 3"
-  }
-];
-module.exports.tests = __tests;
+divisibleBy2And3(321)
