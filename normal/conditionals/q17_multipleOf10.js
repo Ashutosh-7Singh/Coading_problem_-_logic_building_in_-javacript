@@ -1,9 +1,25 @@
 /**
  * Q17 - Check multiple of 10
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether a numeric input `n` is a multiple of 10.
  *
- * Example 1: Input: "sample" => Output: false
+ * Input:
+ * - A single numeric value `n`.
+ *
+ * Output:
+ * - Return or print `true` if `n % 10 === 0`, otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Negative numbers follow the same rule.
+ * - Non-integer inputs may be validated or coerced depending on tests.
+ *
+ * Examples:
+ * - Input: 20 => Output: true
+ * - Input: 23 => Output: false
+ *
+ * Edge cases:
+ * - Zero (0) is a multiple of 10 and should return true.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

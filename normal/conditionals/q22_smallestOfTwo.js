@@ -1,9 +1,24 @@
 /**
  * Q22 - Find the smallest of two numbers
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given two numeric values `a` and `b`, determine and return the smaller value.
  *
- * Example 1: Input: [10,20] => Output: 10
+ * Input:
+ * - Two numeric values `a` and `b`.
+ *
+ * Output:
+ * - Return or print the smaller of the two numbers. If equal, return either value.
+ *
+ * Constraints & notes:
+ * - Use strict numeric comparison. Non-numeric inputs should be validated.
+ *
+ * Examples:
+ * - Input: [10,20] => Output: 10
+ * - Input: [5,5]   => Output: 5
+ *
+ * Edge cases:
+ * - Negative numbers are allowed and compared as usual.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

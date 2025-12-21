@@ -1,9 +1,25 @@
 /**
  * Q23 - Find the largest of three numbers
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given three numeric values `a`, `b`, and `c`, determine and return the largest value.
  *
- * Example 1: Input: [5,12,9] => Output: 12
+ * Input:
+ * - Three numeric values `a`, `b`, `c`.
+ *
+ * Output:
+ * - Return or print the largest of the three numbers. If more than one share the maximum,
+ *   return any one of them.
+ *
+ * Constraints & notes:
+ * - Use numeric comparisons; non-numeric inputs should be validated.
+ *
+ * Examples:
+ * - Input: [5,12,9] => Output: 12
+ * - Input: [7,7,3]  => Output: 7
+ *
+ * Edge cases:
+ * - All equal numbers should return that value.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

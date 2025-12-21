@@ -1,9 +1,25 @@
 /**
  * Q50 - Assign grade from percentage
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given a percentage score, assign a letter grade according to predefined thresholds
+ * (e.g., A, B, C, D, F). The helper in `level3_real_world` implements the project's
+ * exact grading thresholds used by tests.
  *
- * Example 1: Input: 76 => Output: "B"
+ * Input:
+ * - A single numeric `percent` (0-100 expected).
+ *
+ * Output:
+ * - Return or print a grade string such as 'A', 'B', 'C', etc.
+ *
+ * Constraints & notes:
+ * - Exact cutoffs vary by project; rely on the helper for consistency with tests.
+ *
+ * Examples:
+ * - Input: 76 => Output: 'B' (example based on project thresholds)
+ *
+ * Edge cases:
+ * - Borderline percentages should follow the project's inclusive/exclusive rules (>= or >).
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

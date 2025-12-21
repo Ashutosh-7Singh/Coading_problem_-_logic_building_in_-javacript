@@ -1,9 +1,24 @@
 /**
  * Q19 - Check between 1 and 50
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether a given number `n` lies in the inclusive range 1 to 50.
  *
- * Example 1: Input: "sample" => Output: false
+ * Input:
+ * - A single numeric value `n`.
+ *
+ * Output:
+ * - Return or print `true` if `1 <= n && n <= 50`, otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Non-numeric inputs should be validated.
+ *
+ * Examples:
+ * - Input: 25 => Output: true
+ * - Input: 0  => Output: false
+ *
+ * Edge cases:
+ * - Exactly 1 and 50 are included in the valid range.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

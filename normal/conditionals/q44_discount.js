@@ -1,9 +1,26 @@
 /**
  * Q44 - Calculate discount
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given a purchase amount, compute the discount amount according to the store's discount slabs
+ * (e.g., percentage discount over certain thresholds). The actual slab rules are implemented in
+ * the project's helper `level3_real_world`.
  *
- * Example 1: Input: 3000 => Output: 300
+ * Input:
+ * - A single numeric `amount` representing the shopping total.
+ *
+ * Output:
+ * - Return or print the discount amount (number).
+ *
+ * Constraints & notes:
+ * - Use the helper logic to match test expectations.
+ * - Non-numeric or negative amounts should be validated.
+ *
+ * Examples:
+ * - Input: 3000 => Output: 300 (example using project slabs)
+ *
+ * Edge cases:
+ * - Small amounts below slab thresholds may get zero discount.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

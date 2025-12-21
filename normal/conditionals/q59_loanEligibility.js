@@ -1,9 +1,24 @@
 /**
  * Q59 - Loan eligibility
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether a person is eligible for a loan based on criteria such as age and monthly income.
+ * The helper `level3_real_world` implements the specific eligibility rules used by tests.
  *
- * Example 1: Input: [30,30000] => Output: true
+ * Input:
+ * - `age` (integer), `monthlyIncome` (number).
+ *
+ * Output:
+ * - Return or print `true` if the person meets eligibility criteria, otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Typical conditions: minimum age and minimum monthly income thresholds. Use helper for exact rules.
+ *
+ * Examples:
+ * - Input: [30, 30000] => Output: true (example using project rules)
+ *
+ * Edge cases:
+ * - Edge values near the thresholds should match helper behavior precisely.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

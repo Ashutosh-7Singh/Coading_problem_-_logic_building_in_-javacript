@@ -1,9 +1,26 @@
 /**
  * Q54 - Return number of days in month
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given a month number and an optional year, return the number of days in that month.
+ * February should account for leap years (29 days in leap years, 28 otherwise).
  *
- * Example 1: Input: [2,2024] => Output: 29
+ * Input:
+ * - `monthNo` (integer 1-12), and optional `year` (integer) to determine February length.
+ *
+ * Output:
+ * - Return or print the number of days in the month as an integer.
+ *
+ * Constraints & notes:
+ * - If `year` is omitted, some implementations may assume non-leap-year behavior or use a default.
+ * - Use leap-year rules: divisible by 400 or (divisible by 4 and not by 100).
+ *
+ * Examples:
+ * - Input: [2, 2024] => Output: 29
+ * - Input: [4]      => Output: 30
+ *
+ * Edge cases:
+ * - Invalid month numbers (outside 1-12) should be validated.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

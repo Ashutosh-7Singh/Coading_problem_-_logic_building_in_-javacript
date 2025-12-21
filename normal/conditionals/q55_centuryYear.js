@@ -1,9 +1,27 @@
 /**
  * Q55 - Check century year
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether a given year is a century year (i.e., evenly divisible by 100).
+ * Note: Century-year status is independent of leap-year rules; the latter uses additional
+ * divisibility by 400.
  *
- * Example 1: Input: 2000 => Output: true
+ * Input:
+ * - A single integer `year`.
+ *
+ * Output:
+ * - Return or print `true` if `year % 100 === 0`, otherwise `false`.
+ *
+ * Constraints & notes:
+ * - This check differs from leap-year determination (a century year is not automatically a leap year).
+ *
+ * Examples:
+ * - Input: 2000 => Output: true
+ * - Input: 1900 => Output: true
+ * - Input: 1999 => Output: false
+ *
+ * Edge cases:
+ * - Negative or zero years should be handled as tests require (usually positive year values are used).
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

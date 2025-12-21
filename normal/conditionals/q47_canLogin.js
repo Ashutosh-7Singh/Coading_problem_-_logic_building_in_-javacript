@@ -1,9 +1,27 @@
 /**
  * Q47 - Login check
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Verify whether provided `username` and `password` match stored credentials. Return true when
+ * credentials match exactly, otherwise false.
  *
- * Example 1: Input: ["alice","pass","alice","pass"] => Output: true
+ * Input:
+ * - `username`, `password`: credentials provided by user
+ * - `storedUsername`, `storedPassword`: credentials stored in the system
+ *
+ * Output:
+ * - Return or print `true` if `username === storedUsername` and `password === storedPassword`, otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Use strict equality and exact matching; no hashing is performed in these exercises.
+ * - In real systems never store plaintext passwords—this is an educational example.
+ *
+ * Examples:
+ * - Input: ["alice","pass","alice","pass"] => Output: true
+ * - Input: ["bob","x","bob","y"] => Output: false
+ *
+ * Edge cases:
+ * - Case-sensitivity matters unless explicitly specified otherwise.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

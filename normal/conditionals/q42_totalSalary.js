@@ -1,9 +1,27 @@
 /**
  * Q42 - Calculate total salary
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Compute the total salary given a basic salary and percentage values for HRA and DA.
+ * Typically: total = basic + (basic * hraPercent/100) + (basic * daPercent/100).
  *
- * Example 1: Input: 50000 => Output: 65000
+ * Input:
+ * - `basic` (number): basic salary amount.
+ * - `hraPercent` (number, optional): HRA percentage (default may be provided by helper).
+ * - `daPercent` (number, optional): DA percentage.
+ *
+ * Output:
+ * - Return or print the computed total salary as a number.
+ *
+ * Constraints & notes:
+ * - Percent values are expected as numbers (e.g., 10 for 10%).
+ * - This file uses helper logic in `level3_real_world` for consistent behavior across tests.
+ *
+ * Examples:
+ * - Input: basic=50000 => Output: 65000 (example using sample HRA/DA in project)
+ *
+ * Edge cases:
+ * - Zero or negative basic salaries should be validated; tests typically pass valid values.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

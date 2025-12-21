@@ -1,9 +1,26 @@
 /**
  * Q05 - Check divisible by 5
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether an integer is divisible by 5.
  *
- * Example 1: Input: "sample" => Output: "Not divisible by 5"
+ * Input:
+ * - A single numeric value `n`.
+ *
+ * Output:
+ * - Return or print 'Divisible by 5' if `n` is divisible by 5, otherwise 'Not divisible by 5'.
+ * - Non-numeric inputs should be treated as invalid.
+ *
+ * Constraints & notes:
+ * - You can check the last digit (0 or 5) or use `n % 5 === 0`.
+ *
+ * Examples:
+ * - Input: 25  => Output: 'Divisible by 5'
+ * - Input: 42  => Output: 'Not divisible by 5'
+ *
+ * Edge cases:
+ * - Negative numbers follow the same divisibility rules.
+ * - Non-integer values should be validated depending on the expected behavior.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

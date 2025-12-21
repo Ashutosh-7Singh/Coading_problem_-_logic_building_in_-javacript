@@ -1,9 +1,27 @@
 /**
  * Q02 - Check if a number is zero or not
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether a given numeric input `n` is exactly zero or not.
  *
- * Example 1: Input: "sample" => Output: "Not zero"
+ * Input:
+ * - A single value `n` (typically a number).
+ *
+ * Output:
+ * - Return or print the string 'Zero' if `n === 0`, otherwise 'Not zero'.
+ * - Non-numeric inputs may be treated as invalid and handled accordingly.
+ *
+ * Constraints & notes:
+ * - Use strict equality for zero check to avoid false positives for falsy values.
+ * - Floating point zeros (0.0) should be considered zero.
+ *
+ * Examples:
+ * - Input: 0   => Output: 'Zero'
+ * - Input: 5   => Output: 'Not zero'
+ * - Input: -0  => Output: 'Zero'
+ *
+ * Edge cases:
+ * - Non-numeric inputs should be validated and handled (print message or return an error).
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

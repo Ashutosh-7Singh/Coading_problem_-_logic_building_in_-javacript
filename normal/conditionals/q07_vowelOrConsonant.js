@@ -1,17 +1,35 @@
 /**
  * Q07 - Check vowel or consonant
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given a single character, determine whether it is a vowel or a consonant.
  *
- * Example 1: Input: "sample" => Output: "Input must be a single character"
+ * Input:
+ * - A single-character string `ch`.
+ *
+ * Output:
+ * - Return or print 'Vowel' for letters a, e, i, o, u (case-insensitive), otherwise 'Consonant'.
+ * - If the input is not a single alphabetic character, return/print an error message
+ *   such as 'Input must be a single character'.
+ *
+ * Constraints & notes:
+ * - Only alphabetic characters are valid; digits and symbols are invalid input.
+ * - Treat uppercase and lowercase letters equivalently.
+ *
+ * Examples:
+ * - Input: 'a' => Output: 'Vowel'
+ * - Input: 'B' => Output: 'Consonant'
+ * - Input: 'ab'=> Output: 'Input must be a single character'
+ *
+ * Edge cases:
+ * - Non-letter characters (digits, punctuation) should be rejected.
+ * - Empty strings or multi-character strings should be rejected.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */
 
 // Q7: Check if a character is a vowel or consonant
 // Implement `solve(ch)` to return: 'Vowel', 'Consonant', or error message for invalid input.
-
-
 
 function vowelOrConsonent(char){
   if (typeof char !== 'string' ){

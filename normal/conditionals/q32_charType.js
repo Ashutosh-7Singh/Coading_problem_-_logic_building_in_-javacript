@@ -1,9 +1,26 @@
 /**
  * Q32 - Check char type: alphabet/digit/special
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given a single character, determine whether it is an alphabetic letter, a digit, or a special character.
  *
- * Example 1: Input: "a" => Output: "Alphabet"
+ * Input:
+ * - A single-character string `ch`.
+ *
+ * Output:
+ * - Return or print 'Alphabet' for letters, 'Digit' for numeric digits, and 'Special' for other characters.
+ * - For invalid inputs (multi-character strings), print a helpful message.
+ *
+ * Constraints & notes:
+ * - Treat uppercase and lowercase letters equally for the 'Alphabet' classification.
+ *
+ * Examples:
+ * - Input: 'a' => Output: 'Alphabet'
+ * - Input: '5' => Output: 'Digit'
+ * - Input: '#' => Output: 'Special'
+ *
+ * Edge cases:
+ * - Empty string or multi-character inputs should be rejected.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

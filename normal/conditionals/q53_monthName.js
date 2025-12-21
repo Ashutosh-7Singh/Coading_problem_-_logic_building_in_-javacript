@@ -1,9 +1,22 @@
 /**
  * Q53 - Return month name from number
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Convert a numeric month index (1-12) into the corresponding month name.
  *
- * Example 1: Input: 12 => Output: "December"
+ * Input:
+ * - A single integer `monthNo` (1=January ... 12=December).
+ *
+ * Output:
+ * - Return or print the month name string (e.g., 'December').
+ * - For invalid inputs, print a helpful message or handle as tests expect.
+ *
+ * Examples:
+ * - Input: 12 => Output: 'December'
+ * - Input: 1  => Output: 'January'
+ *
+ * Edge cases:
+ * - Values outside 1-12 should be validated.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

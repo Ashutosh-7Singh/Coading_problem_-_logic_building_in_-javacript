@@ -1,9 +1,25 @@
 /**
  * Q49 - Divisible by 6 or 9
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given an integer `n`, determine whether it is divisible by 6 or by 9 (or both).
  *
- * Example 1: Input: 18 => Output: true
+ * Input:
+ * - A single integer `n`.
+ *
+ * Output:
+ * - Return or print `true` if `n % 6 === 0` or `n % 9 === 0`, otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Being divisible by 6 requires divisibility by both 2 and 3.
+ *
+ * Examples:
+ * - Input: 18 => Output: true (divisible by both 6 and 9)
+ * - Input: 12 => Output: true (divisible by 6)
+ * - Input: 9  => Output: true (divisible by 9)
+ *
+ * Edge cases:
+ * - Zero may be treated as divisible by both; check test conventions.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

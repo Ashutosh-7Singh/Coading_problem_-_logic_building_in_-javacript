@@ -1,9 +1,24 @@
 /**
  * Q21 - Find the largest of two numbers
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given two numeric values `a` and `b`, determine and return the larger value.
  *
- * Example 1: Input: [10,20] => Output: 20
+ * Input:
+ * - Two numeric values `a` and `b`.
+ *
+ * Output:
+ * - Return or print the larger of the two numbers. If equal, return either value.
+ *
+ * Constraints & notes:
+ * - Use strict numeric comparison. Non-numeric inputs should be validated.
+ *
+ * Examples:
+ * - Input: [10,20] => Output: 20
+ * - Input: [5,5]   => Output: 5
+ *
+ * Edge cases:
+ * - Negative numbers are allowed; the comparison should work normally.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

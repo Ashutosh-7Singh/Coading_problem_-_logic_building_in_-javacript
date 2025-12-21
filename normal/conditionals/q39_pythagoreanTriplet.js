@@ -1,9 +1,25 @@
 /**
  * Q39 - Check Pythagorean triplet
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given three positive integers `a`, `b`, and `c`, determine whether they form a Pythagorean
+ * triplet (i.e., whether a^2 + b^2 = c^2 for some ordering of a, b, c).
  *
- * Example 1: Input: [3,4,5] => Output: true
+ * Input:
+ * - Three numeric values `a`, `b`, `c` (positive integers expected).
+ *
+ * Output:
+ * - Return or print `true` if the three values form a Pythagorean triplet, otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Order of inputs may vary; check all permutations or sort and treat largest as hypotenuse.
+ *
+ * Examples:
+ * - Input: [3,4,5] => Output: true
+ * - Input: [5,12,13] => Output: true
+ *
+ * Edge cases:
+ * - Zero or negative inputs are invalid for Pythagorean triplets.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

@@ -1,9 +1,31 @@
 /**
  * Q26 - Triangle type: equilateral/isosceles/scalene
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given three angles of a triangle (in degrees), identify the triangle type:
+ * - 'Equilateral' if all three angles are equal (60,60,60)
+ * - 'Isosceles' if exactly two angles are equal
+ * - 'Scalene' if all three angles are different
+ * - Optionally identify 'Right-Angled' if any angle is 90
  *
- * Example 1: Input: [60,60,60] => Output: "Equilateral"
+ * Input:
+ * - Three numeric values `a`, `b`, and `c` representing angles. The triangle should be valid
+ *   (sum to 180) before determining type.
+ *
+ * Output:
+ * - Print or return a string naming the triangle type. For invalid triangles, print 'Not A Triangle'.
+ *
+ * Constraints & notes:
+ * - Angles must be positive and sum to 180 to be considered a triangle.
+ * - Order of checks may affect which label is used for special cases (e.g., isosceles right triangle).
+ *
+ * Examples:
+ * - Input: [60,60,60] => Output: 'Equilateral'
+ * - Input: [90,45,45] => Output: 'Isosceles Triangle' or 'Right-Angled Triangle' depending on priority
+ * - Input: [30,60,90] => Output: 'Scalene Triangle' or 'Right-Angled Triangle'
+ *
+ * Edge cases:
+ * - Non-integer angles and floating point rounding when summing to 180 may require tolerance.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

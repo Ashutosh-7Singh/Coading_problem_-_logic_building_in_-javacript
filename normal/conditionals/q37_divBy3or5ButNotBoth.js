@@ -1,9 +1,25 @@
 /**
  * Q37 - Divisible by 3 or 5 but not both
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given an integer `n`, determine whether it is divisible by 3 or 5 but not both (exclusive or).
  *
- * Example 1: Input: 9 => Output: true
+ * Input:
+ * - A single integer `n`.
+ *
+ * Output:
+ * - Return or print `true` if exactly one of `n % 3 === 0` or `n % 5 === 0` holds, otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Zero is divisible by both 3 and 5 so would yield `false` for this check.
+ *
+ * Examples:
+ * - Input: 9  => Output: true (divisible by 3 only)
+ * - Input: 10 => Output: true (divisible by 5 only)
+ * - Input: 15 => Output: false (divisible by both)
+ *
+ * Edge cases:
+ * - Negative numbers follow the same divisibility logic.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

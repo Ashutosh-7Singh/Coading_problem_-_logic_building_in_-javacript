@@ -1,9 +1,26 @@
 /**
  * Q29 - Divisible by 7 or 9
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given an integer `n`, determine whether it is divisible by 7, by 9, or by both.
  *
- * Example 1: Input: 63 => Output: true
+ * Input:
+ * - A single integer `n`.
+ *
+ * Output:
+ * - Print or return an indication of divisibility by 7 and/or 9. If neither, indicate the
+ *   condition is not satisfied.
+ *
+ * Constraints & notes:
+ * - Use modulus checks `n % 7 === 0` and `n % 9 === 0`.
+ *
+ * Examples:
+ * - Input: 63 => Output: true (divisible by both 7 and 9)
+ * - Input: 49 => Output: true (divisible by 7)
+ * - Input: 18 => Output: true (divisible by 9)
+ *
+ * Edge cases:
+ * - Zero is divisible by any non-zero integer; test expectations may vary.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */
@@ -43,4 +60,4 @@ function divBy7AndBy9(num) {
     console.log("Condition not satisfies");
   }
 }
-divBy7AndBy9(349)
+divBy7AndBy9(343)

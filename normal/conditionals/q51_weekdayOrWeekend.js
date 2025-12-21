@@ -1,9 +1,23 @@
 /**
  * Q51 - Weekday or Weekend
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given a day number (1-7), determine whether it corresponds to a weekday or weekend.
+ * Typical mapping: 1=Monday ... 7=Sunday; weekend days are usually 6 and 7.
  *
- * Example 1: Input: 6 => Output: "Weekend"
+ * Input:
+ * - A single integer `dayNo` (1-7 expected).
+ *
+ * Output:
+ * - Return or print 'Weekday' for days 1-5 and 'Weekend' for days 6-7. For invalid day numbers,
+ *   print a helpful message or handle as tests expect.
+ *
+ * Examples:
+ * - Input: 6 => Output: 'Weekend'
+ * - Input: 3 => Output: 'Weekday'
+ *
+ * Edge cases:
+ * - If the day number is outside 1-7, implementations should validate the input.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

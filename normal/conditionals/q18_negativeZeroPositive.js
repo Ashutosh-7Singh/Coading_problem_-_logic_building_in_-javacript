@@ -1,9 +1,25 @@
 /**
  * Q18 - Check negative/zero/positive
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Classify a numeric input `n` as 'Negative', 'Zero', or 'Positive'.
  *
- * Example 1: Input: "sample" => Output: "Positive"
+ * Input:
+ * - A single numeric value `n`.
+ *
+ * Output:
+ * - Return or print 'Negative' if n < 0, 'Zero' if n === 0, otherwise 'Positive'.
+ *
+ * Constraints & notes:
+ * - Non-numeric inputs should be validated and handled by the implementation.
+ *
+ * Examples:
+ * - Input: -5 => Output: 'Negative'
+ * - Input: 0  => Output: 'Zero'
+ * - Input: 7  => Output: 'Positive'
+ *
+ * Edge cases:
+ * - Very small/large numeric values follow normal sign rules.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

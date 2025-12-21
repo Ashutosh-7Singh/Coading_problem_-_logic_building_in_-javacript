@@ -1,9 +1,25 @@
 /**
  * Q28 - Divisible by 4 but not by 6
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * For a given integer `n`, determine whether it is divisible by 4 but not divisible by 6.
  *
- * Example 1: Input: 8 => Output: true
+ * Input:
+ * - A single integer `n`.
+ *
+ * Output:
+ * - Print or return 'Divisible by 4 but not by 6' when condition holds, otherwise a message
+ *   indicating the condition is not satisfied.
+ *
+ * Constraints & notes:
+ * - A number divisible by 6 must be divisible by both 2 and 3. Use `n % 4 === 0` and `n % 6 !== 0`.
+ *
+ * Examples:
+ * - Input: 8   => Output: 'Divisible by 4 but not by 6'
+ * - Input: 12  => Output: 'Condition not satisfied' (since 12 divisible by both 4 and 6)
+ *
+ * Edge cases:
+ * - Zero is divisible by every integer; depending on test expectations it may or may not be considered valid.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

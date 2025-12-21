@@ -1,9 +1,30 @@
 /**
  * Q01 - Check if a number is positive or negative
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given a numeric input `n`, determine whether the number is positive, negative, or zero.
  *
- * Example 1: Input: "sample" => Output: "Zero"
+ * Input:
+ * - A single value `n` (typically a number). Tests normally pass numeric inputs.
+ *
+ * Output:
+ * - Return or print one of the strings: 'Positive', 'Negative', or 'Zero'.
+ * - If the input is not a number, the implementation may print an error message or
+ *   return a helpful message depending on local conventions (many files print to console).
+ *
+ * Constraints & notes:
+ * - Accept integer and floating-point numbers.
+ * - Non-numeric inputs should be treated as invalid; typical behavior is to print
+ *   an error message and exit.
+ *
+ * Examples:
+ * - Input: 10  => Output: 'Positive'
+ * - Input: -3  => Output: 'Negative'
+ * - Input: 0   => Output: 'Zero'
+ *
+ * Edge cases:
+ * - Very large or small numeric values should still be classified by sign.
+ * - Non-numeric inputs should be handled gracefully (print message or return an error).
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

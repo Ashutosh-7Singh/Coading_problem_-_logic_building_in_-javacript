@@ -1,9 +1,26 @@
 /**
  * Q57 - Check vowel using switch
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether a given single character is a vowel (a,e,i,o,u) using a switch-case style
+ * check (case-insensitive).
  *
- * Example 1: Input: "E" => Output: true
+ * Input:
+ * - A single-character string `ch`.
+ *
+ * Output:
+ * - Return or print `true` if `ch` is a vowel, otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Treat uppercase and lowercase letters equally.
+ * - Non-letter inputs should be handled as invalid.
+ *
+ * Examples:
+ * - Input: 'E' => Output: true
+ * - Input: 'b' => Output: false
+ *
+ * Edge cases:
+ * - Multi-character strings and empty strings should be validated.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

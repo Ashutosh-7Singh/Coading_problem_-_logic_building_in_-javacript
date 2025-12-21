@@ -1,9 +1,29 @@
 /**
  * Q04 - Check voting eligibility (age >= 18)
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given a person's age, determine whether they are eligible to vote. A person is eligible
+ * if their age is greater than or equal to 18.
  *
- * Example 1: Input: "sample" => Output: "Not eligible to vote"
+ * Input:
+ * - A single numeric value `age` (non-negative integer expected).
+ *
+ * Output:
+ * - Return or print 'Eligible to vote' when `age >= 18`, otherwise 'Not eligible to vote'.
+ * - Negative ages or non-numeric input should be handled as invalid; typical behavior is to
+ *   print a message and treat them as not eligible.
+ *
+ * Constraints & notes:
+ * - Age is usually an integer; fractional ages may be floored depending on requirements.
+ *
+ * Examples:
+ * - Input: 20  => Output: 'Eligible to vote'
+ * - Input: 17  => Output: 'Not eligible to vote'
+ * - Input: 18  => Output: 'Eligible to vote'
+ *
+ * Edge cases:
+ * - Extremely large ages should still be classified as eligible.
+ * - Non-numeric inputs should be validated by the caller.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

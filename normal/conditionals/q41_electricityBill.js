@@ -1,9 +1,27 @@
 /**
  * Q41 - Calculate electricity bill
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Calculate an electricity bill for a given number of units consumed using tiered rates
+ * and any fixed charges or surcharges defined by the problem.
  *
- * Example 1: Input: 350 => Output: 320
+ * Input:
+ * - A single numeric value `units` (non-negative integer) representing energy units consumed.
+ *
+ * Output:
+ * - Return or print the total bill amount as a number (rounded according to the project's rules).
+ *
+ * Constraints & notes:
+ * - Use the tariff slabs provided by the exercise's implementation — tests call into
+ *   a helper in `level3_real_world` which implements the actual slab logic.
+ * - Non-numeric or negative inputs should be validated and handled accordingly.
+ *
+ * Examples:
+ * - Input: 350 => Output: 320 (example using project slab rules)
+ *
+ * Edge cases:
+ * - Zero units should result in zero or minimal fixed charge depending on implementation.
+ * - Very large unit values should still calculate correctly using the slab logic.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

@@ -1,9 +1,26 @@
 /**
  * Q13 - Check divisible by 3 and 7
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether a given integer `n` is divisible by both 3 and 7.
  *
- * Example 1: Input: "sample" => Output: false
+ * Input:
+ * - A single integer `n`.
+ *
+ * Output:
+ * - Return or print `true` if `n` is divisible by both 3 and 7 (i.e., divisible by 21), otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Use `n % 3 === 0 && n % 7 === 0` or `n % 21 === 0`.
+ * - Negative numbers follow the same divisibility rules.
+ *
+ * Examples:
+ * - Input: 21  => Output: true
+ * - Input: 42  => Output: true
+ * - Input: 14  => Output: false
+ *
+ * Edge cases:
+ * - Zero (0) is divisible by every integer (usually treated as true for divisibility checks).
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

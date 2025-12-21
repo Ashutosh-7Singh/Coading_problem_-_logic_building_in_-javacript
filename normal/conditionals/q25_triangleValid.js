@@ -1,9 +1,25 @@
 /**
  * Q25 - Check triangle validity (sum=180)
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given three angles of a proposed triangle (in degrees), determine whether they form a valid triangle.
+ * A triangle is valid if all angles are positive and the sum of angles equals 180 degrees.
  *
- * Example 1: Input: [60,60,60] => Output: true
+ * Input:
+ * - Three numeric values representing angles `a`, `b`, and `c`.
+ *
+ * Output:
+ * - Return or print 'Valid Triangle' if angles are positive and sum to 180, otherwise 'Invalid Triangle'.
+ *
+ * Constraints & notes:
+ * - Angles should be positive numbers; zero or negative angles are invalid.
+ *
+ * Examples:
+ * - Input: [60,60,60] => Output: 'Valid Triangle'
+ * - Input: [0,90,90]  => Output: 'Invalid Triangle'
+ *
+ * Edge cases:
+ * - Floating point angles that sum to 180 within a small epsilon may be considered valid depending on tests.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

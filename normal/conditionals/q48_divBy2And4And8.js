@@ -1,9 +1,24 @@
 /**
  * Q48 - Divisible by 2, 4, and 8
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether an integer `n` is divisible by 2, by 4, and by 8 simultaneously.
  *
- * Example 1: Input: 64 => Output: true
+ * Input:
+ * - A single integer `n`.
+ *
+ * Output:
+ * - Return or print `true` if `n` is divisible by 8 (which implies divisibility by 4 and 2), otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Divisibility by 8 is sufficient to imply divisibility by 2 and 4.
+ *
+ * Examples:
+ * - Input: 64 => Output: true
+ * - Input: 12 => Output: false
+ *
+ * Edge cases:
+ * - Zero is divisible by any non-zero integer; check test expectations for zero.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

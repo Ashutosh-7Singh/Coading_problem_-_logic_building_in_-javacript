@@ -1,9 +1,24 @@
 /**
  * Q33 - Check if number is within 10 to 100
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether a given number `n` lies in the inclusive range from 10 to 100.
  *
- * Example 1: Input: 50 => Output: true
+ * Input:
+ * - A single numeric value `n`.
+ *
+ * Output:
+ * - Return or print `true` if `10 <= n && n <= 100`, otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Non-numeric inputs should be validated by the implementation.
+ *
+ * Examples:
+ * - Input: 50 => Output: true
+ * - Input: 9  => Output: false
+ *
+ * Edge cases:
+ * - Exactly 10 and 100 should be considered inside the range.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

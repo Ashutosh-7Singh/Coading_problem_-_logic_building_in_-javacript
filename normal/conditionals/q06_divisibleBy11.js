@@ -1,9 +1,28 @@
 /**
  * Q06 - Check divisible by 11
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether a number is divisible by 11. A common test is to compute the
+ * difference between the sum of digits at odd positions and the sum of digits at even
+ * positions; if the difference is divisible by 11, the number is divisible by 11.
  *
- * Example 1: Input: "sample" => Output: "Not divisible by 11"
+ * Input:
+ * - A non-negative integer `n`.
+ *
+ * Output:
+ * - Return or print 'Divisible by 11' if `n` is divisible by 11, otherwise 'Not Divisible by 11'.
+ *
+ * Constraints & notes:
+ * - For large values, process digits as strings or use digit extraction loops.
+ * - Negative numbers may be converted to positive before processing.
+ *
+ * Examples:
+ * - Input: 2728 => Output: 'Not Divisible by 11'
+ * - Input: 121  => Output: 'Divisible by 11'
+ *
+ * Edge cases:
+ * - Single-digit numbers are not divisible by 11 (except 0).
+ * - Non-integer inputs should be validated.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

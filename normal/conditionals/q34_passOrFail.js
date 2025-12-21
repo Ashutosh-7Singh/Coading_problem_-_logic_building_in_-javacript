@@ -1,9 +1,25 @@
 /**
  * Q34 - Check pass or fail (>=40)
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given a marks value, determine whether the student has passed. Passing threshold is 40.
  *
- * Example 1: Input: 45 => Output: "Pass"
+ * Input:
+ * - A single numeric value `marks`.
+ *
+ * Output:
+ * - Return or print 'Pass' if `marks >= 40`, otherwise 'Fail'.
+ * - Non-numeric inputs should be treated as invalid.
+ *
+ * Constraints & notes:
+ * - Marks may be integer or floating point depending on tests.
+ *
+ * Examples:
+ * - Input: 45 => Output: 'Pass'
+ * - Input: 39 => Output: 'Fail'
+ *
+ * Edge cases:
+ * - Exactly 40 is considered 'Pass'.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

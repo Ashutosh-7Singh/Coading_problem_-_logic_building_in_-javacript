@@ -1,9 +1,25 @@
 /**
  * Q36 - Divisible by 8 and 12
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether a given integer `n` is divisible by both 8 and 12.
  *
- * Example 1: Input: 24 => Output: true
+ * Input:
+ * - A single integer `n`.
+ *
+ * Output:
+ * - Return or print `true` if `n` is divisible by both 8 and 12, otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Being divisible by both 8 and 12 is equivalent to being divisible by lcm(8,12)=24.
+ *
+ * Examples:
+ * - Input: 24 => Output: true
+ * - Input: 48 => Output: true
+ * - Input: 8  => Output: false
+ *
+ * Edge cases:
+ * - Zero is divisible by any non-zero integer; test expectations may vary.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

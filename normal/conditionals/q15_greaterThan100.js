@@ -1,9 +1,24 @@
 /**
  * Q15 - Check if greater than 100
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether a given numeric value `n` is strictly greater than 100.
  *
- * Example 1: Input: "sample" => Output: false
+ * Input:
+ * - A single numeric value `n`.
+ *
+ * Output:
+ * - Return or print `true` if `n > 100`, otherwise `false`.
+ *
+ * Constraints & notes:
+ * - Non-numeric inputs should be validated and handled appropriately.
+ *
+ * Examples:
+ * - Input: 150 => Output: true
+ * - Input: 100 => Output: false
+ *
+ * Edge cases:
+ * - Very large numbers still follow the same comparison rules.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

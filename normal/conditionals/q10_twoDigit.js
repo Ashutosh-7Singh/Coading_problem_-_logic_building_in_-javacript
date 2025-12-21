@@ -1,9 +1,27 @@
 /**
  * Q10 - Check two-digit number
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Determine whether a given value is a two-digit number (10 to 99 or -10 to -99).
  *
- * Example 1: Input: "sample" => Output: false
+ * Input:
+ * - A single value `n` (numeric expected).
+ *
+ * Output:
+ * - Return or print `true` if `n` is a two-digit integer (absolute value between 10 and 99), else `false`.
+ *
+ * Constraints & notes:
+ * - Negative two-digit numbers are considered two-digit (e.g., -45 -> true).
+ * - Non-integer values or strings should be validated or coerced depending on tests.
+ *
+ * Examples:
+ * - Input: 12  => Output: true
+ * - Input: -99 => Output: true
+ * - Input: 5   => Output: false
+ *
+ * Edge cases:
+ * - Exactly 10 and 99 are included as two-digit numbers.
+ * - Strings that look like numbers may be coerced if implementation allows.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

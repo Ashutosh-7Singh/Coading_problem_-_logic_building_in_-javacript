@@ -1,9 +1,25 @@
 /**
  * Q16 - Check if two numbers are equal
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Given two values `a` and `b`, determine whether they are strictly equal numbers.
  *
- * Example 1: Input: "a, b" => Output: false
+ * Input:
+ * - Two values `a` and `b` (tests typically pass numeric values).
+ *
+ * Output:
+ * - Return or print `true` if `a === b`, otherwise `false`.
+ * - If inputs are not both numbers, implementations may validate and print an error.
+ *
+ * Constraints & notes:
+ * - Use strict equality to avoid type-coercion surprises.
+ *
+ * Examples:
+ * - Input: (2, 2)   => Output: true
+ * - Input: (2, '2') => Output: false
+ *
+ * Edge cases:
+ * - Floating point equality should be exact here; tests usually use integers.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

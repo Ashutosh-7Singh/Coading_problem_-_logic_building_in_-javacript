@@ -1,9 +1,26 @@
 /**
  * Q43 - Calculate bonus based on years
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Calculate the bonus payable to an employee based on basic salary and years of service.
+ * The helper in `level3_real_world` contains the exact slab logic used by tests.
  *
- * Example 1: Input: [40000,6] => Output: 24000
+ * Input:
+ * - `basic` (number): basic salary.
+ * - `years` (integer): years of service.
+ *
+ * Output:
+ * - Return or print the bonus amount as a number.
+ *
+ * Constraints & notes:
+ * - Typical logic: longer service yields higher bonus percentage of basic salary.
+ * - Negative or non-numeric inputs should be validated.
+ *
+ * Examples:
+ * - Input: [40000, 6] => Output: 24000 (example using project slab rules)
+ *
+ * Edge cases:
+ * - Very long service years or fractional years should be handled correctly per project rules.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */

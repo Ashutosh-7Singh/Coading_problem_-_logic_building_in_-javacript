@@ -1,9 +1,22 @@
 /**
  * Q52 - Return day name from number
  *
- * Description: See implementation in this file.
+ * Problem statement:
+ * Convert a numeric day index (1-7) into the corresponding weekday name.
  *
- * Example 1: Input: 3 => Output: "Wednesday"
+ * Input:
+ * - A single integer `dayNo` (1=Monday, 2=Tuesday, ..., 7=Sunday typically).
+ *
+ * Output:
+ * - Return or print the name of the day as a string (e.g., 'Wednesday').
+ * - For invalid inputs, print a helpful message or handle as the tests expect.
+ *
+ * Examples:
+ * - Input: 3 => Output: 'Wednesday'
+ * - Input: 7 => Output: 'Sunday'
+ *
+ * Edge cases:
+ * - Values outside the 1-7 range should be validated.
  *
  * AUTO-GENERATED-TESTS: This header and tests block were added by tools/inject_tests.js
  */
