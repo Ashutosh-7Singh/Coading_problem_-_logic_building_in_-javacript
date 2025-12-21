@@ -25,28 +25,17 @@
  */
 
 // Q34: Check if marks are pass or fail (pass ≥ 40)
-const lib = require('../if_else/level2_basic_logic');
 
-function solve(marks) {
-  return lib.check34_passOrFail(marks);
-}
-
-function runExample() {
-  console.log('Q34 sample (45):', solve(45));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check pass or fail (>=40)' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      45
-    ],
-    "expected": "Pass"
+function passFail (marks){
+  if (typeof marks !== 'number'){
+    console.log("please put a valid Markes")
   }
-];
-module.exports.tests = __tests;
+
+  if(marks >= 40 ){
+    return "pass"
+  }else {
+    return "fail"
+  }
+}
+
+console.log(passFail(342))
