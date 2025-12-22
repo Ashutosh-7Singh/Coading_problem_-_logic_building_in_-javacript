@@ -26,28 +26,26 @@
  */
 
 // Q40: Check if a number is a perfect square
-const lib = require('../if_else/level2_basic_logic');
 
-function solve(n) {
-  return lib.check40_perfectSquare(n);
-}
-
-function runExample() {
-  console.log('Q40 sample (49):', solve(49));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check perfect square' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      49
-    ],
-    "expected": true
+function perfectSquare(num){
+  if(!Number.isInteger(num)){
+    console.log("Please Give a Valid Integer")
   }
-];
-module.exports.tests = __tests;
+
+let i = 0;
+let found =false;
+ while(i*i <= num ){
+  if(i*i === num){
+    found= true
+    break;
+  }
+  i++;
+ }
+ if(found){
+  console.log("Perfect Square")
+ }else {
+  console.log("Not a perfect aquare")
+ }
+}
+
+perfectSquare(491)
