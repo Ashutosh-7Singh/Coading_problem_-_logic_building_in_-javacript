@@ -12,3 +12,4 @@ console.log(x**y)//exponent
 //  =,+=,-=,/=,%=
 
 // Relation Operator or Comperasional Operator
+ 

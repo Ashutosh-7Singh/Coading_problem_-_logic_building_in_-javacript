@@ -26,29 +26,46 @@
  */
 
 // Q43: Calculate bonus based on years of service
-const lib = require('../if_else/level3_real_world');
+// const lib = require('../if_else/level3_real_world');
 
-function solve(basic, years) {
-  return lib.check43_bonus(basic, years);
-}
+// function solve(basic, years) {
+//   return lib.check43_bonus(basic, years);
+// }
 
-function runExample() {
-  console.log('Q43 sample (basic=40000, years=6):', solve(40000,6));
-}
+// function runExample() {
+//   console.log('Q43 sample (basic=40000, years=6):', solve(40000,6));
+// }
 
-if (require.main === module) runExample();
+// if (require.main === module) runExample();
 
-module.exports = { solve, runExample, description: 'Calculate bonus based on years' };
+// module.exports = { solve, runExample, description: 'Calculate bonus based on years' };
 
 
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      40000,
-      6
-    ],
-    "expected": 24000
+// // AUTO-GENERATED-TESTS
+// const __tests = [
+//   {
+//     "input": [
+//       40000,
+//       6
+//     ],
+//     "expected": 24000
+//   }
+// ];
+// module.exports.tests = __tests;
+
+function calculateBonus(salary, year) {
+  if (typeof salary !== 'number' || salary <= 0) {
+    console.log("Please enter a valid salary");
+    return 0;
   }
-];
-module.exports.tests = __tests;
+
+  if (typeof year !== 'number' || year <= 0) {
+    console.log("Year is not valid");
+    return 0;
+  }
+
+  let bonus = (salary / 10) * year;
+  return bonus;
+}
+
+console.log(calculateBonus(40000, 6));
