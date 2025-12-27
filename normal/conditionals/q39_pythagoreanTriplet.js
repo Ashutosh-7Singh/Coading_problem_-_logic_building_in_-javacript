@@ -25,30 +25,19 @@
  */
 
 // Q39: Check if three numbers form a Pythagorean triplet
-const lib = require('../if_else/level2_basic_logic');
+const lib = require("../if_else/level2_basic_logic");
 
-function solve(a, b, c) {
-  return lib.check39_pythagoreanTriplet(a, b, c);
-}
-
-function runExample() {
-  console.log('Q39 sample (3,4,5):', solve(3,4,5));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check Pythagorean triplet' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      3,
-      4,
-      5
-    ],
-    "expected": true
+function Pythagorean(a, b, c) {
+  if (!Number.isInteger(a) || !Number.isInteger(b) || !Number.isInteger(c)) {
+    console.log("Please Enter Valid Integer");
   }
-];
-module.exports.tests = __tests;
+
+  a = Math.abs(a);
+  b = Math.abs(b);
+  c = Math.abs(c);
+
+  if (a ** 2 + b ** 2 === c ** 2) {
+    return true;
+  } else return false;
+}
+console.log(Pythagorean(3,4,5))

@@ -26,28 +26,25 @@
  */
 
 // Q32: Check if a character is an alphabet, digit, or special character
-const lib = require('../if_else/level2_basic_logic');
 
-function solve(ch) {
-  return lib.check32_charType(ch);
-}
+function checkType(value){
 
-function runExample() {
-  console.log('Q32 sample (a):', solve('a'));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check char type: alphabet/digit/special' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      "a"
-    ],
-    "expected": "Alphabet"
+  if(value.length !== 1 ){
+    console.log("Please Enter input in a single String ");
+    return
   }
-];
-module.exports.tests = __tests;
+
+  if((value >= 'A' && value <= 'Z' ) || (value >='a' && value <= 'z')){
+    console.log("Alphabet")
+  }else if (value >= '0' && value <='9'){
+    console.log("Digit")
+  }else {
+    console.log("Symbol")
+  }
+
+
+
+
+}
+
+checkType("-")

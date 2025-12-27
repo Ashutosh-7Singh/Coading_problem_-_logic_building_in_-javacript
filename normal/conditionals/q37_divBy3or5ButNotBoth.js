@@ -25,28 +25,33 @@
  */
 
 // Q37: Check if a number is divisible by 3 or 5 but not both
-const lib = require('../if_else/level2_basic_logic');
+const lib = require("../if_else/level2_basic_logic");
 
-function solve(n) {
-  return lib.check37_divBy3or5ButNotBoth(n);
-}
-
-function runExample() {
-  console.log('Q37 sample (9):', solve(9));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Divisible by 3 or 5 but not both' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      9
-    ],
-    "expected": true
+function divBy3NotBy5(num) {
+  if (!Number.isInteger) {
+    console.log("Input Must be a Valid Integer");
   }
-];
-module.exports.tests = __tests;
+
+  if (num < 0) {
+    num = num * -1;
+  }
+  let lastDigit= num % 10;
+
+  //  rule of 5
+
+  let sum = 0;
+  let temp = num;
+  while (temp > 0) {
+    let lastDigit = temp % 10;
+    sum += lastDigit;
+    temp = Math.floor(temp / 10);
+  }
+  if (
+    (sum % 3 === 0 && lastDigit !== 0 && lastDigit !== 5) ||
+    (sum % 3 !== 0 && lastDigit == 0 && lastDigit == 5)
+  ) {
+    return true;
+  }else return false;
+}
+
+console.log(divBy3NotBy5(12))

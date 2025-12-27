@@ -26,29 +26,19 @@
  */
 
 // Q38: Check if two numbers have the same sign
-const lib = require('../if_else/level2_basic_logic');
 
-function solve(a, b) {
-  return lib.check38_sameSign(a, b);
-}
-
-function runExample() {
-  console.log('Q38 sample (5, -3):', solve(5, -3));
-}
-
-if (require.main === module) runExample();
-
-module.exports = { solve, runExample, description: 'Check if two numbers have the same sign' };
-
-
-// AUTO-GENERATED-TESTS
-const __tests = [
-  {
-    "input": [
-      5,
-      -3
-    ],
-    "expected": false
+function sameSign(a,b){
+  if(!Number.isInteger(a) || !Number.isInteger(b)){
+    console.log("Please give a valid Integer")
+    return;
   }
-];
-module.exports.tests = __tests;
+
+  if((a >= 0 && b >= 0) || (a < 0 && b < 0))
+{
+    return true;
+  }else return false 
+
+
+}
+
+console.log(sameSign(-7,-3))

@@ -28,28 +28,27 @@
  */
 
 // Q31: Check if a number is prime (basic logic)
-const lib = require('../if_else/level2_basic_logic');
+const lib = require("../if_else/level2_basic_logic");
 
 function isPrime(num){
   if(!Number.isInteger(num)){
-    console.log("Invalid Input")
+    console.log("Invalid Integer")
   }
 
-  if(num < 0 ){
-    console.log("Input not be a negative Interger")
+  if (num<= 1){
+    console.log("Not a Prime Number")
   }
 
-  let i = 2
+  let i = 2;
 
-  while(i < num ){
-    if(num % i === 0){
-      console.log("Not a prime number")
-    }else {
-      console.log("Prime number ")
-    }
-  }
-    i++
-
-return
+  while(i < num){
+if(num % i === 0){
+  console.log("Not a Prime Number");
+  return;
 }
+i++
+  }
+  console.log("Prime Number");
+}
+
 isPrime(31)
