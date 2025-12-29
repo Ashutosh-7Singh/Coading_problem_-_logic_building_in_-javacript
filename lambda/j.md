@@ -546,3 +546,63 @@ after component is rerendered ?
 38.Create a popup using portal ?
 39.Which lifecycle hooks in class component are replaced with useEffect in functional components ? 
 40.Create a pagination component ?
+
+
+<!-- Express -->
+
+Here are 50 must-know Express.js interview questions with crisp answers
+ 👉 From freshers to experienced developers
+
+Save it. Revisit it. Crack your next backend interview. 💪
+
+🔥 𝟓𝟎 𝐄𝐱𝐩𝐫𝐞𝐬𝐬.𝐣𝐬 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 & 𝐀𝐧𝐬𝐰𝐞𝐫𝐬
+ 1.What is Express.js?
+ 2.Why use Express.js?
+ 3.Is Express.js a frontend or backend framework?
+ 4.What is middleware in Express.js?
+ 5.Types of middleware in Express.js?
+ 6.What is app.use()?
+ 7.What is routing in Express.js?
+ 8.Difference between GET and POST?
+ 9.What is req in Express.js?
+10.What is res in Express.js?
+11.What is res.send()?
+12.What is res.json()?
+13.What is next() in Express.js?
+14.What is body-parser?
+15.What is express.json()?
+16.What is express.urlencoded()?
+17.What is error-handling middleware?
+18.What is app.listen()?
+19.What is REST API?
+20.What is CORS?
+21.What is router in Express.js?
+22.What is req.params?
+23.What is req.query?
+24.What is req.body?
+25.What is Morgan?
+26.What is Nodemon?
+27.What is MVC in Express.js?
+28.What is JWT?
+29.How to handle 404 errors?
+30.What is res.status()?
+31.What is Helmet?
+32.What is Express-session?
+33.What is cookie-parser?
+34.What is rate limiting?
+35.What is async/await in Express?
+36.How to handle async errors?
+37.What is app.get()?
+38.What is app.post()?
+39.What is app.put()?
+40.What is app.delete()?
+41.What is Express static?
+42.What is environment variable?
+43.What is dotenv?
+44.What is clustering?
+45.What is template engine?
+46.What is EJS?
+47.What is API versioning?
+48.How to secure Express app?
+49.What is deployment of Express app?
+50.Is Express.js scalable?

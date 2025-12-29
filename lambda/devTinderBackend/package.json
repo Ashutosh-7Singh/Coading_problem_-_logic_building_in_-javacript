@@ -1,0 +1,19 @@
+{
+  "name": "devtinderbackend",
+  "version": "1.0.0",
+  "description": "tinder for devs",
+  "keywords": [
+    "nodejs",
+    "javaScript"
+  ],
+  "license": "ISC",
+  "author": "Ashutosh Singh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
